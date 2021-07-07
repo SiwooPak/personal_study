@@ -10,6 +10,7 @@ function doubleSelectionSort(arr, a, b) {
         for(let i=0; i<arr.length; i++) {
             if(arr[i] < arr[min]) min = i;
             if(arr[i] > arr[max]) max = i;
+            
             let temp = null;
             temp = arr[start];
             arr[start] = arr[min];
@@ -23,4 +24,5 @@ function doubleSelectionSort(arr, a, b) {
             end--;
         }
     }
+    return arr;
 }
